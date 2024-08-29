@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"tut_can_f407\startup_stm32f407xx.o"
+"tut_can_f407\main.o"
+"tut_can_f407\stm32f4xx_it.o"
+"tut_can_f407\stm32f4xx_hal_msp.o"
+"tut_can_f407\stm32f4xx_hal_can.o"
+"tut_can_f407\stm32f4xx_hal_rcc.o"
+"tut_can_f407\stm32f4xx_hal_rcc_ex.o"
+"tut_can_f407\stm32f4xx_hal_flash.o"
+"tut_can_f407\stm32f4xx_hal_flash_ex.o"
+"tut_can_f407\stm32f4xx_hal_flash_ramfunc.o"
+"tut_can_f407\stm32f4xx_hal_gpio.o"
+"tut_can_f407\stm32f4xx_hal_dma_ex.o"
+"tut_can_f407\stm32f4xx_hal_dma.o"
+"tut_can_f407\stm32f4xx_hal_pwr.o"
+"tut_can_f407\stm32f4xx_hal_pwr_ex.o"
+"tut_can_f407\stm32f4xx_hal_cortex.o"
+"tut_can_f407\stm32f4xx_hal.o"
+"tut_can_f407\stm32f4xx_hal_exti.o"
+"tut_can_f407\stm32f4xx_hal_tim.o"
+"tut_can_f407\stm32f4xx_hal_tim_ex.o"
+"tut_can_f407\system_stm32f4xx.o"
+"tut_can_f407\button.o"
+--strict --scatter "TUT_CAN_F407\TUT_CAN_F407.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TUT_CAN_F407.map" -o TUT_CAN_F407\TUT_CAN_F407.axf
